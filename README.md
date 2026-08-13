@@ -12,6 +12,10 @@ A responsive movie discovery application built with React and the TMDB API. Brow
 
 The screenshots are captured from the responsive desktop interface. Add `home.png`, `discover.png`, and `movie-details.png` to `docs/screenshots/` after configuring a TMDB key if you want to showcase API-backed pages too.
 
+## Live Demo
+
+[View the deployed Movie App](https://your-project-name.vercel.app)
+
 ## Features
 
 - Landing page with trending, popular, and upcoming movie collections
@@ -214,6 +218,19 @@ Tests run in jsdom and exercise components through visible roles, labels, and us
 Movie data and images are supplied by [The Movie Database](https://www.themoviedb.org/). Requests are defined in `src/services/api.js`; movie-detail and person-detail requests use TMDB's appended responses to fetch related information with fewer network round trips.
 
 This product uses the TMDB API but is not endorsed or certified by TMDB.
+
+## Deployment
+
+This application is deployed with [Vercel](https://vercel.com/) and automatically redeploys when changes are pushed to the `main` branch.
+
+Deployment configuration:
+
+- Root directory: `frontend`
+- Framework preset: Vite
+- Build command: `npm run build`
+- Output directory: `dist`
+- Environment variable: `VITE_TMDB_API_KEY`
+- SPA routing is handled through `frontend/vercel.json`
 
 ## Future improvements
 
