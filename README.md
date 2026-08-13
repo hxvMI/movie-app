@@ -8,7 +8,7 @@ A responsive movie discovery application built with React and the TMDB API. Brow
 
 | Favorites | Page not found |
 | --- | --- |
-| ![Favorites page](docs/screenshots/favorites.png) | ![Friendly 404 page](docs/screenshots/not-found.png) |
+| ![Favorites page](frontend/docs/screenshots/favorites.png) | ![Friendly 404 page](frontend/docs/screenshots/not-found.png) |
 
 The screenshots are captured from the responsive desktop interface. Add `home.png`, `discover.png`, and `movie-details.png` to `docs/screenshots/` after configuring a TMDB key if you want to showcase API-backed pages too.
 
