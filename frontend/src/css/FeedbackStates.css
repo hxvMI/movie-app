@@ -1,0 +1,55 @@
+.empty-state {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.empty-state h2 {
+  margin-bottom: 1rem;
+  color: #e50914;
+  font-size: 2rem;
+}
+
+.empty-state p {
+  color: #999;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.movie-skeleton {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+.movie-skeleton-poster,
+.movie-skeleton-line {
+  background: linear-gradient(90deg, #202020 25%, #303030 50%, #202020 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s infinite;
+}
+
+.movie-skeleton-poster {
+  aspect-ratio: 2 / 3;
+}
+
+.movie-skeleton-line {
+  height: 0.9rem;
+  margin: 1rem;
+  border-radius: 999px;
+}
+
+.movie-skeleton-title { width: 65%; }
+.movie-skeleton-year { width: 30%; margin-top: 0; }
+
+@keyframes skeleton-shimmer {
+  to { background-position: -200% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .movie-skeleton-poster,
+  .movie-skeleton-line { animation: none; }
+}

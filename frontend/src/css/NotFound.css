@@ -1,0 +1,135 @@
+.not-found {
+  position: relative;
+  width: calc(100% + 4rem);
+  min-height: calc(100vh - 80px);
+  margin: -2rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 3rem 2rem;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(229, 9, 20, 0.16), transparent 34%),
+    linear-gradient(145deg, #171717, #090909 65%);
+}
+
+.not-found::before,
+.not-found::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.not-found::before {
+  width: 520px;
+  height: 520px;
+}
+
+.not-found::after {
+  width: 720px;
+  height: 720px;
+}
+
+.not-found-glow {
+  position: absolute;
+  z-index: -1;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(229, 9, 20, 0.14);
+  filter: blur(70px);
+}
+
+.not-found-content {
+  max-width: 720px;
+  text-align: center;
+}
+
+.not-found-code {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.06);
+  font-size: clamp(8rem, 26vw, 18rem);
+  font-weight: 900;
+  line-height: 0.7;
+  letter-spacing: -0.08em;
+  user-select: none;
+}
+
+.not-found-kicker {
+  margin-top: -0.35rem;
+  color: #ff6470;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.not-found h1 {
+  margin: 0.75rem 0 0;
+  color: #fff;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.not-found-message {
+  max-width: 58ch;
+  margin: 1.25rem auto 0;
+  color: #aaa;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.not-found-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.not-found-actions a {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  color: #fff;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.not-found-actions a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.not-found-primary {
+  background: #e50914;
+}
+
+.not-found-primary:hover {
+  background: #f40612;
+}
+
+.not-found-secondary {
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.not-found-secondary:hover {
+  border-color: rgba(255, 100, 112, 0.55) !important;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+@media (max-width: 640px) {
+  .not-found {
+    width: calc(100% + 2rem);
+    margin: -2rem -1rem -1rem;
+    padding-inline: 1rem;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+  }
+}

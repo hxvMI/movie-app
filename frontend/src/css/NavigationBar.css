@@ -1,0 +1,10 @@
+.navbar { position:sticky; top:0; z-index:50; min-height:72px; padding:.75rem max(1rem,calc((100% - 1280px)/2)); display:flex; justify-content:space-between; align-items:center; gap:2rem; border-bottom:1px solid rgba(255,255,255,.08); background:rgba(8,8,9,.88); backdrop-filter:blur(18px); }
+.navbar-brand { display:flex; align-items:center; gap:.65rem; color:#fff; font-size:1.15rem; font-weight:800; }
+.navbar-brand:hover { color:#fff; }
+.brand-mark { width:34px; height:34px; display:grid; place-items:center; border-radius:10px; background:#e50914; box-shadow:0 8px 22px rgba(229,9,20,.3); }
+.navbar-links { display:flex; align-items:center; gap:.25rem; }
+.navbar-links > a { display:flex; align-items:center; gap:.45rem; padding:.6rem .85rem; border-radius:8px; color:#aaa; font-size:.92rem; transition:.2s ease; }
+.navbar-links > a:hover { color:#fff; background:rgba(255,255,255,.06); }
+.navbar-links > a.active { color:#fff; background:rgba(229,9,20,.16); }
+.favorites-count { min-width:22px; height:22px; display:grid; place-items:center; padding:0 .35rem; border-radius:999px; background:#e50914; color:#fff; font-size:.72rem; font-weight:800; }
+@media(max-width:600px){.navbar{min-height:64px;padding:.6rem .75rem;gap:.5rem}.navbar-brand>span:last-child{display:none}.navbar-links{flex:1;justify-content:flex-end}.navbar-links>a{padding:.55rem .6rem;font-size:.82rem}.favorites-nav-link{font-size:0!important}.favorites-nav-link::before{content:"Favorites";font-size:.82rem}}
