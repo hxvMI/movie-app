@@ -14,7 +14,7 @@ The screenshots are captured from the responsive desktop interface. Add `home.pn
 
 ## Live Demo
 
-[View the deployed Movie App](https://your-project-name.vercel.app)
+[View the deployed Movie App](https://movie-app-snowy-eta-44.vercel.app)
 
 ## Features
 
