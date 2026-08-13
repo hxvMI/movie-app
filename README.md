@@ -120,7 +120,7 @@ git clone <your-repository-url>
 This repository keeps the React application in the `frontend` folder. Run npm commands from that folder—not from the repository's parent folder.
 
 ```bash
-cd "React Movie Tutorial/frontend"
+cd "React Movie movie-app/frontend"
 ```
 
 If your downloaded folder has a different name, enter that folder and then enter `frontend`:
